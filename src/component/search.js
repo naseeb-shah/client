@@ -7,7 +7,7 @@ export const Search = () => {
   const [search, searchValue] = useState("");
   const searchHandle = () => {
     axios
-      .get(`http://localhost:3005/search?search=${search}`)
+      .get(`https://server-84ol.vercel.app/search?search=${search}`)
       .then((response) => setData(response.data.data || []));
   };
 
