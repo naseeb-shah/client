@@ -23,7 +23,7 @@ export const CartData = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3005/?sort=${sortValue}`)
+      .get(`https://server-84ol.vercel.app/?sort=${sortValue}`)
       .then((response) => setData(response.data.data || []));
     if (sortValue == "Default") {
       let value = data;
